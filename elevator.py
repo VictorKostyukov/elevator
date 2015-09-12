@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
 
-# This is an Elevator class which implements my algorithm for controlling the
+# Elevator class which implements my algorithm for controlling the
 # decision-making logic of an elevator (i.e. deciding which floor to go next)
-# The goal of the algorithm is to maximize elevator efficiency by minimizing
-# the number of floors traveled during a single journey
 class Elevator(object):
 
     # Initializes a new Elevator object
@@ -12,11 +10,8 @@ class Elevator(object):
         # Total number of floors accessible by the elevator
         self.num_floors = num_floors
         # An unordered set of floor numbers that have been requested
-        # The algorithm makes no distinction between someone requesting
-        # a floor and someone requesting the elevator from any floor
         self.requested_floors = set()
         # Current floor number
-        # For maximal efficiency, start at either the lowest or highest floor
         self.current_floor = starting_floor
         # Number of floors traveled since the elevator was started
         self.floors_traveled = 0
