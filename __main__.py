@@ -46,18 +46,18 @@ def main():
     elevator.request_floor(1)
     test(elevator)
 
-    elevator = Elevator(num_floors=6, starting_floor=3)
+    elevator = Elevator(num_floors=5, starting_floor=3)
     elevator.request_floor(1)
     elevator.request_floor(2)
-    elevator.request_floor(3)
     elevator.request_floor(4)
+    elevator.request_floor(5)
     test(elevator)
 
-    elevator = Elevator(num_floors=6, starting_floor=1)
-    elevator.request_floor(1)
+    elevator = Elevator(num_floors=5, starting_floor=1)
     elevator.request_floor(2)
     elevator.request_floor(3)
     elevator.request_floor(4)
+    elevator.request_floor(5)
     test(elevator)
 
 if __name__ == '__main__':
