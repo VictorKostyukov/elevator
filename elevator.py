@@ -27,7 +27,7 @@ class Elevator(object):
     def get_floor_difference(self, floor):
         return abs(self.current_floor - floor)
 
-    # Travels to at the given floor to pick up or drop off passengers
+    # Travels to the given floor to pick up or drop off passengers
     def visit_floor(self, floor):
         self.num_floors_traveled += self.get_floor_difference(floor)
         self.current_floor = floor
