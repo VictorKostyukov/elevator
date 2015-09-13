@@ -10,18 +10,38 @@ This algorithm was designed with simplicity and efficiency in mind. The primary 
 
 ## Usage
 
-To keep this implementation simple, the algorithm is only concerned with the state of parameters at the moment the elevator is started. In other words, the class must be used as follows:
+The flow for testing the algorithm is as follows. See `__main__.py` for complete code examples.
 
-1. Instantiate a new Elevator object with the required parameters (total number of floors, starting floor)
+1. Instantiate a new elevator object with the required parameters (total number of floors, starting floor)
 2. Request any number of floors
-3. Start the elevator's journey to each of those request floors in the order determined by the algorithm
+3. Start the elevator's journey to each of those requested floors; the algorithm determines the order in which these floors are visited
 
-See `__main__.py` for complete code examples.
+```python
+elevator = Elevator(num_floors=5, starting_floor=1)
+elevator.request_floor(3)
+elevator.request_floor(5)
+elevator.travel()
+```
 
 ## Algorithm
 
 Once floors have been requested and the elevator is started, the elevator visits the closest requested floor, and continues visiting the next closest floor until all requested floors have been visited.
 
-In order to maintain simplicity, the algorithm makes no distinction between someone requesting a floor and someone requesting the elevator from any floor. Thus, the algorithm is not at all concerned with the direction of the elevator, either the requested direction or the current direction at any instant.
+The algorithm makes no distinction between someone requesting a floor and someone requesting the elevator from any floor. Thus, the algorithm is never concerned with the direction of the elevator: not any requested direction nor the current direction.
 
-For maximal efficiency, every elevator should start at either the lowest or highest floor, and the driver program demonstrates the inefficiency of starting at any other floor.
+For maximal efficiency, every elevator should start at either the lowest or highest floor because the elevator would never need to change direction at any point.
+
+### A note about timing
+
+For the sake of simplicity, the implementation of the algorithm is synchronous. However, the algorithm can still simulate the requesting of floors while the elevator is traveling. To do so, simply call `request_floor()` after calling `travel()`, as this will have the same effect.
+
+```python
+elevator = Elevator(num_floors=5, starting_floor=1)
+elevator.request_floor(3)
+elevator.request_floor(5)
+elevator.travel()
+elevator.request_floor(3)
+elevator.request_floor(1)
+```
+
+In terms of the algorithm, this implies that the elevator must finish visiting the current set of requested floors before visiting the next set (*i.e.* the set of those floors requested while the elevator was currently visiting floors).
