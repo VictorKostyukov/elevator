@@ -3,7 +3,7 @@
 from elevator import Elevator
 
 
-# Test the elevator by running it and outputting statistics
+# Tests the elevator by running it and outputting statistics
 # This function assumes that floors have already been requested
 def test(elevator):
 

@@ -4,3 +4,10 @@
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# Unit test / coverage reports
+cover/
+htmlcov/
+.coverage
+coverage.xml
+nosetests.xml
