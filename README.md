@@ -2,6 +2,9 @@
 *Copyright 2015, Caleb Evans*  
 *Released under the MIT license*
 
+[![Build Status](https://travis-ci.org/caleb531/elevator.svg?branch=master)](https://travis-ci.org/caleb531/elevator)
+[![Coverage Status](https://coveralls.io/repos/caleb531/elevator/badge.svg?branch=master)](https://coveralls.io/r/caleb531/elevator?branch=master)
+
 This small project consists of my algorithm for controlling the path of an elevator according to supplied parameters and initial state. The algorithm is implemented in Python 3 and consists of a class (`elevator.py`) and a driver (`__main__.py`).
 
 ## Goals
