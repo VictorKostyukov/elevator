@@ -42,6 +42,7 @@ elevator.request_floor(5)
 elevator.travel()
 elevator.request_floor(3)
 elevator.request_floor(1)
+elevator.travel()
 ```
 
 In terms of the algorithm, this implies that the elevator must finish visiting the current set of requested floors before visiting the next set (*i.e.* the set of those floors requested while the elevator was currently visiting floors).
