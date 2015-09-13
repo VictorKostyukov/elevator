@@ -1,0 +1,35 @@
+Number of floors: 5
+Starting at floor 1
+Requested floors: 5
+Visited floors: 5
+Number of floors traveled: 4
+
+Number of floors: 5
+Starting at floor 1
+Requested floors: 3, 4, 5
+Visited floors: 3, 4, 5
+Number of floors traveled: 4
+
+Number of floors: 5
+Starting at floor 2
+Requested floors: 1, 4, 5
+Visited floors: 1, 4, 5
+Number of floors traveled: 5
+
+Number of floors: 6
+Starting at floor 1
+Requested floors: 1, 5, 6
+Visited floors: 1, 5, 6
+Number of floors traveled: 5
+
+Number of floors: 6
+Starting at floor 3
+Requested floors: 2, 4, 5, 6
+Visited floors: 2, 4, 5, 6
+Number of floors traveled: 5
+
+Number of floors: 6
+Starting at floor 1
+Requested floors: 2, 3, 4, 5
+Visited floors: 2, 3, 4, 5
+Number of floors traveled: 4
