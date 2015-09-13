@@ -31,6 +31,15 @@ def test_visited_floors():
     nose.assert_list_equal(elevator.visited_floors, [4, 2])
 
 
+def test_current_floor_after_travel():
+    """should set current floor to last visited floor"""
+    elevator = Elevator(num_floors=6, starting_floor=4)
+    elevator.request_floor(5)
+    elevator.request_floor(2)
+    elevator.travel()
+    nose.assert_equal(elevator.current_floor, 2)
+
+
 def test_num_floors_traveled_up():
     """should keep track of the number of floors traveled going up"""
     elevator = Elevator(num_floors=5, starting_floor=1)
