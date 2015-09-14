@@ -53,13 +53,13 @@ In terms of the algorithm, this implies that the elevator must finish visiting t
 
 ## Running tests
 
-To run the included unit tests, first installed the required Python packages via pip. Note that you may first wish to create a virtualenv.
+To run the included unit tests, first install the required Python packages via `pip` (note that you may wish to create a virtualenv first):
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then, use the coverage package to run tests (as this will also generate coverage data).
+Then, use the `coverage` package to run unit tests and generate coverage data:
 
 ```bash
 coverage run -m nose
