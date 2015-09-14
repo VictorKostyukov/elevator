@@ -73,4 +73,14 @@ def test_minimize_retrace():
     elevator.request_floor(3)
     elevator.request_floor(2)
     elevator.travel()
-    nose.assert_equal(elevator.visited_floors, [2, 3, 4, 5])
+    nose.assert_list_equal(elevator.visited_floors, [2, 3, 4, 5])
+
+
+def test_duplicate_floor_requests():
+    """should gracefully ignore duplicate floor requests"""
+    elevator = Elevator(num_floors=5, starting_floor=1)
+    elevator.request_floor(3)
+    elevator.request_floor(3)
+    nose.assert_set_equal(elevator.requested_floors, {3})
+    elevator.travel()
+    nose.assert_list_equal(elevator.visited_floors, [3])
