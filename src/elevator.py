@@ -9,12 +9,12 @@ class Elevator(object):
     def __init__(self, num_floors, starting_floor):
         # Total number of floors accessible by the elevator
         self.num_floors = num_floors
+        # Current floor number
+        self.current_floor = starting_floor
         # An unordered set of floor numbers that have been requested
         self.requested_floors = set()
         # An ordered list of floors that have been visited
         self.visited_floors = []
-        # Current floor number
-        self.current_floor = starting_floor
         # Number of floors traveled since the elevator was started
         self.num_floors_traveled = 0
 
