@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import nose.tools as nose
-from elevator import Elevator
+from src.elevator import Elevator
 
 
 def test_init_params():
