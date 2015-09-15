@@ -28,7 +28,7 @@ elevator.travel()
 
 ## Algorithm
 
-Once floors have been requested and the elevator is started, the elevator visits the closest requested floor, and continues visiting the next closest floor until all requested floors have been visited.
+Once floors have been requested and the elevator is started, the elevator visits the closest requested floor, and continues visiting the next closest requested floor until all requested floors have been visited.
 
 The algorithm makes no distinction between someone requesting a floor and someone requesting the elevator from any floor. Thus, the algorithm is never concerned with the direction of the elevator: not any requested direction nor the current direction.
 
