@@ -9,7 +9,7 @@ This small project consists of my algorithm for controlling the path of an eleva
 
 ## Goals
 
-This algorithm was designed with simplicity and efficiency in mind. The primary goal is to maximize elevator efficiency, which is virtually achieved by minimizing the number of floors traveled during the lifetime of the elevator's journey.
+This algorithm and its implementation here were designed with simplicity and efficiency in mind. The primary goal is to maximize elevator efficiency, which is virtually achieved by minimizing the number of floors traveled during the lifetime of the elevator's journey.
 
 ## Usage
 
