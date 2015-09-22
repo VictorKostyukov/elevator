@@ -6,19 +6,19 @@ Number of floors traveled: 4
 
 Number of floors: 5
 Starting at floor 1
-Requested floors: 3, 4, 5
+Requested floors: 5, 3, 4
 Visited floors: 3, 4, 5
 Number of floors traveled: 4
 
 Number of floors: 5
 Starting at floor 2
-Requested floors: 1, 4, 5
+Requested floors: 5, 4, 1
 Visited floors: 1, 4, 5
 Number of floors traveled: 5
 
 Number of floors: 6
 Starting at floor 1
-Requested floors: 1, 5, 6
+Requested floors: 6, 5, 1
 Visited floors: 1, 5, 6
 Number of floors traveled: 5
 
