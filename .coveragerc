@@ -14,4 +14,4 @@ exclude_lines =
 
 # Only check coverage for source files
 include =
-    src/elevator.py
+    elevator/elevator.py

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from src.elevator import Elevator
+from elevator.elevator import Elevator
 
 
 # Tests the elevator by running it and outputting statistics
